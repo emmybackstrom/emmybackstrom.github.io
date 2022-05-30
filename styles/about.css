@@ -1,7 +1,7 @@
 /* Introduction */
 #introduction {
     box-sizing: border-box;
-    padding: 6rem 3rem;
+    padding: 6rem 3rem 3rem 3rem;
     display: flex;
     justify-content: space-between;
 }
@@ -79,7 +79,7 @@ p {
 
 
 #cvOuter h2 {
-    margin: 3rem;
+    margin-bottom: 4rem;
     text-align: center;
 }
 
@@ -100,9 +100,7 @@ p {
     justify-content: space-evenly;
 }
 
-.category {
-    /* width:30%; */
-}
+
 
 
 .categoryHeader {
