@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Emmyrentia Designer Portfolio">
+    <meta name="keywords" content="Emmyrentia, portfolio, designer, ux, ui, ux/ui">
+    <meta name="author" content="viviCode">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="fonts/satoshi/stylesheet.css">
+    <link rel="stylesheet" href="fonts/ah_superduper/stylesheet.css">
+    <link rel="icon" type="image/x-icon" href="images/icon.ico" />
+    <link rel="stylesheet" href="styles/app.css">
+    <link rel="stylesheet" href="styles/projectPages.css">
+    <title>Emmy Bäckström</title>
+</head>
+
+<body>
+    <header>
+        <span><a href="index.html">EMMYRENTIA</a></span>
+        <nav>
+            <ul>
+                <li><a href="index.html">SELECTED WORKS</a></li>
+                <li><a href="more.html">MORE</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="headerPlaceholder"></div>
+
+    <div id="sideNav">
+        <a class="stage" href="#problemFramingSection"><span class="stageSpan">PROBLEM FRAMING</span></a>
+        <a class="stage" href="#ideationSection"><span class="stageSpan">IDEATION</span></a>
+        <a class="stage" href="#developmentSection"><span class="stageSpan">DEVELOPMENT</span></a>
+    </div>
+
+    <div class="hero" id="twentynineHero"></div>
+
+
+    <section class="projectPage" id="introSection">
+        <h1 class="bigHeader">29K</h1>
+        <span>App feature pitch for hackathon</span>
+        <div class="challengeTeamWrapper">
+            <div>
+                <h2 class="smallHeader">CHALLENGE</h2>
+                <p>29k is a mental health app with courses, challenges, meditations and other content meant to
+                    facilitate personal development. During my internship at 29k, there was an org-wide hackathon in
+                    which everyone had 2 days to come up with, develop and pitch an idea which would support 29k’s
+                    mission.
+                </p>
+                <p>
+                    Something which I had previously identified as a problem through UX research was that new users
+                    experience a lack of guidance and aren’t sure what to do or how to work towards a goal after
+                    creating an
+                    account. This in turn leads to a low retention rate, which is why I chose to focus on how to solve
+                    this
+                    problem.
+                </p>
+            </div>
+            <div>
+                <h2 class="smallHeader">TEAM</h2>
+                <ul>
+                    <li>Strategy & Design - Emmy Bäckström</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <div class="colorStrip" id="twentynineGrey"></div>
+
+    <section class="projectPage" id="problemFramingSection">
+        <h2 class="bigHeader">PROBLEM FRAMING</h2>
+        <p>Though I started with a problem in mind, it wasn’t specific enough and clearly defined. More importantly, I
+            wanted to challenge my problem by asking a set of questions to be sure it was a relevant problem to solve.
+            Therefore, I went through the process of problem framing in order to have one clear problem statement for
+            ideation.
+        </p>
+        <p>
+            Using a workshop structure from Design Sprint Academy, I identified what type of user is affected by the
+            problem, what their experience is like when they are, in what contexts they’re affected and finally
+            connected it
+            to both user and business values. I ended up with the problem statement “People who are new to actively
+            working
+            on personal development lack guidance when planning activities and creating habits which support personal
+            growth. We need to provide guidance for defining what areas they want to develop in, and how to go about
+            it.”.
+        </p>
+    </section>
+    <div class="imgContainer">
+        <div class="img">
+            <img src="images/29k/pf1.png">
+        </div>
+        <div class="img">
+
+            <img src="images/29k/pf2.png">
+        </div>
+    </div>
+
+
+    <section class="projectPage" id="ideationSection">
+        <h2 class="bigHeader">IDEATION</h2>
+        <p>When moving from problem framing to ideation, I used my problem statement to formulate a concise focus
+            question: “How might we make users feel encouraged to use the app?”. I used the same ideation process as in
+            a previous sprint I had done, and therefore went on to rapid research about my topic for 15 minutes to get
+            ideas of what other companies are doing to address this.
+        </p>
+        <p>
+            After getting inspiration, I came up with 4 concepts: Personalized plan, Rewarding illustration and copy
+            after activity, Streaks and Badges. After asking my team members for feedback, and learning from our
+            psychologists why gamification features like streaks and badges aren’t effective in contexts which involve
+            deep focus and effort, I decided to develop the first two ideas.</p>
+    </section>
+
+    <div class="imgContainer">
+        <div class="img">
+            <img src="images/29k/ideation1.png">
+        </div>
+        <div class="img">
+            <img src="images/29k/ideation2.png">
+        </div>
+    </div>
+
+    <section class="projectPage" id="developmentSection">
+        <h2 class="bigHeader">DEVELOPMENT</h2>
+        <p>
+            For the personalized plan, I envisioned that as a final stage in onboarding the user would get the chance to
+            answer two simple questions about their intention with using the app and based from that get a growth plan.
+            This plan would contain a daily, weekly and monthly overview of curated exercises relating to what the user
+            answered that they were interested in. The plan helps tackle many of the problems I identified during the
+            first stage, like providing guidance on what to do in order to reach goals, staying motivated by being able
+            to view progress etc.
+        </p>
+        <p>
+            The rewarding illustration and copy was a one screen design where I aimed to improve the final screen of
+            doing an activity in the app. I implemented a progress bar which shows a users overall progress on their
+            personal growth plan, and illustrated a character which provides a more unique and original impression than
+            a stock photo.
+        </p>
+    </section>
+
+    <img id="twentyNineApp" class="overviewImg" src="images/29k/development.png">
+
+    <section id="twentyNineTestimonial" class="testimonialContainer">
+        <span class="testimonialQuote">”In this project, after only spending a handfull of days with our team, Emmy has
+            identified an area in our app that multiple user interviews and data analysis confirmed as crucial for user
+            engagement and retention. By asking users two simple questions very early in their journey, we would not
+            only be able to tailor what we offer to individual user’s needs, but also get to know our users better, in
+            general. Unlike an ordinary survey, users’ motivation to answer those questions would be their own benefit,
+            and the questions would feel inspiring and validating rather than intrusive.
+        </span>
+        <span class="testimonialQuote">
+            Overall, we’ve been hugely impressed by the cleverness, elegance and neat design of this project, even
+            without considering the short time they were done in and the very limited introduction Emmy has had into our
+            product and UX research around it. It fits so perfectly into what the app already has, while adding huge
+            value with small means.”
+        </span> <br>
+        <span class="testimonialPerson">- Sonja Petrović Lundberg, CPO</span>
+    </section>
+
+    <img class="overviewImg" src="images/29k/product.png">
+
+
+
+    <footer>
+        <ul>
+            <li id="emailIcon">
+                <img id="emailHover" src="images/emailHover.png">
+                <a href="mailto:emmy.backstrom@hyperisland.se" target="_blank"><img src="images/email.png" alt="Email icon"></a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/emmy-backstrom/" target="_blank"><img src="images/linkedin.png"
+                        alt="LinkedIn icon"></a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/emmyrentia/" target="_blank"><img src="images/instagram.png"
+                        alt="Instagram icon"></a>
+            </li>
+        </ul>
+        <ul id="credits">
+            <li>Designed by Emmy Bäckström</li>
+            <li>Developed by Ville Viljanen</li>
+        </ul>
+    </footer>
+
+
+    <script src="scripts/nav.js"></script>
+    <script src="scripts/sidenav3.js"></script>
+    <script src="scripts/footer.js"></script>
+</body>
+
+</html>

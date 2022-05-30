@@ -1,0 +1,49 @@
+
+/* Carousel Mekonomen */
+.carouselOutside {
+    width: 100%;
+    overflow: hidden;
+}
+
+.carouselContainer {
+    width: 60%;
+    margin: auto;
+    position: relative;
+}
+
+.carouselSlide {
+    display: flex;
+    width: 100%;
+}
+
+
+
+.carouselSlide img {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 1rem;
+    opacity: .3;
+}
+
+#prevBtn,
+#nextBtn {
+    position: absolute;
+    height: 7.5%;
+    top: 46.25%;
+    z-index: 10;
+    opacity: 0.4;
+}
+
+#prevBtn:hover,
+#nextBtn:hover {
+    opacity: 1;
+}
+
+
+#prevBtn {
+    left: -1.5%;
+}
+
+#nextBtn {
+    right: -1.5%;
+}

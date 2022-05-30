@@ -1,0 +1,401 @@
+/* 
+
+
+
+CONTENTS
+INDEX.HTML
+1.1 GLOBAL
+1.2 HEADER
+1.3 BANNER
+1.4 MAIN
+1.5 FOOTER
+
+MEKONOMEN.HTML
+2.1 HERO-SECTION
+
+*/
+
+
+
+/* 1. GLOBAL */
+
+body {
+    font-family: 'satoshimedium', Times, serif;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* 2. HEADER */
+
+#headerPlaceholder {
+    height: 88px;
+}
+
+header {
+    position: fixed;
+    box-sizing: border-box;
+    z-index: 10;
+    width: 100%;
+    background-color: white;
+    padding: 3rem 3rem 1rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+    font-family: 'ah_superduperbold', Times, serif;
+    transition: all 300ms ease-in-out;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 2rem;
+}
+
+header nav ul li:hover {
+    opacity: .6;
+}
+
+.scrollDown {
+    transform: translate3d(0, -100%, 0);
+}
+
+
+
+
+/* 3. BANNER */
+#banner {
+    margin: 2rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#banner h1 {
+    font-size: 42px;
+    max-width: 734px;
+    line-height: 57px;
+    margin-right: 1em;
+}
+
+#hoverSpanOne,
+#hoverSpanTwo {
+    position: relative;
+    white-space: nowrap;
+}
+
+#hoverSpanOne::after,
+#hoverSpanTwo::after {
+    content: '*';
+    color: #FFF500;
+}
+
+svg {
+    position: absolute;
+    width: 100%;
+    z-index: -2;
+    left: 0;
+    bottom: -20px;
+}
+
+#hiddenPContainer {
+    position: relative;
+    max-width: 450px;
+    height: fit-content;
+    opacity: 0;
+}
+
+#hiddenP {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+/* Yellow line behind the hidden paragraph. */
+#hiddenPBackground {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -10px;
+    right: 0;
+    background: url(../images/index/vector4.png);
+    z-index: -1;
+    background-repeat: no-repeat;
+}
+
+
+@media (max-width: 1088px) {
+    #banner {
+        flex-direction: column;
+    }
+
+    #banner h1 {
+        align-self: flex-start;
+        margin: 0;
+    }
+
+    #hiddenPContainer {
+        display: none;
+    }
+
+    #hoverSpanOne,
+    #hoverSpanTwo {
+        white-space: initial;
+    }
+
+    #hoverSpanOne::after,
+    #hoverSpanTwo::after {
+        content: none;
+    }
+}
+
+
+/* BANNER END */
+
+
+
+/* 4. MAIN */
+
+main {
+    margin: 0 3rem;
+}
+
+main div a,
+main a {
+    display: inline-block;
+}
+
+.container {
+    display: flex;
+}
+
+.project {
+    height: 290px;
+    position: relative;
+}
+
+@media (max-width:480px) {
+    main {
+        margin:0;
+    }
+}
+
+
+/* Global hoverstate styles */
+
+.hoverState {
+    box-sizing: border-box;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 1.5rem;
+    background-color: rgb(255, 255, 255, .7);
+    backdrop-filter: blur(5px);
+    opacity: 0;
+}
+
+.hoverState h2 {
+    font-family: 'ah_superdupermedium', Times, serif;
+    font-size: 48px;
+    margin-bottom: .8rem;
+}
+
+.hoverState .description {
+    font-family: 'satoshiregular', Times, serif;
+}
+
+/* End of global hoverstate styles */
+
+/* Mekonomen */
+.mek {
+    flex: 1;
+    background: url(../images/index/mekonomen.png);
+    background-position: center;
+}
+
+.mek .hoverState h2 {
+    width: 30%;
+}
+
+
+/* Mekonomen */
+
+/* HM */
+.hm {
+    width: 450px;
+    margin-left: 3rem;
+    background: url(../images/index/hm.png);
+    background-position: center;
+}
+
+.hm .hoverState {
+    text-align: end;
+}
+
+/* HM */
+
+
+/* 29k */
+
+.twentyNine {
+    margin: 3rem 0;
+    width: 100%;
+    background: url(../images/index/29k.png);
+    background-position: center;
+}
+
+.twentyNine .hoverState {
+    text-align: end;
+}
+
+
+
+/* 29k */
+
+/* Goalplan */
+.goalPlan {
+    width: 450px;
+    margin-right: 3rem;
+    background: url(../images/index/goalplan.png);
+    background-position: center;
+}
+
+.goalPlan .hoverState {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+
+/* Goalplan */
+
+
+/* Acast */
+.acast {
+    flex: 1;
+    background: url(../images/index/acast.png);
+    background-position: center;
+}
+
+/* Acast */
+
+@media (max-width: 1088px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .project {
+        margin: 0 0 3rem 0;
+        width: 100%;
+        min-height: 290px;
+        background-size:auto 100%;
+    }
+    .mek {
+        background-image: url(../images/index/mekonomensmall.png);
+    }
+    .hm {
+        background-image: url(../images/index/hmsmall.png); 
+    }
+    .twentyNine {
+        background-image: url(../images/index/29ksmall.png);
+    }
+    .goalPlan {
+        background-image: url(../images/index/goalplansmall.png);   
+    }
+    .acast {
+        background-image: url(../images/index/acastsmall.png);   
+    }
+}
+
+@media (min-width:1400px) {
+    .project {
+        background-size:auto 250%;
+    }
+    .mek {
+        background-image: url(../images/index/mekonomenwide.png);   
+    }
+    .hm {
+        background-image: url(../images/index/hmwide.png);   
+        background-size: auto 175%;
+        width:40%;
+    }
+    .twentyNine {
+        background-image: url(../images/index/29kwide.png);   
+        background-position-y: -175px;
+    }
+    .goalPlan {
+        background-image: url(../images/index/goalplanwide.png);   
+        background-size:auto 175%;
+        width:40%;
+    }
+    .acast {
+        background-image: url(../images/index/acastwide.png);   
+    }
+    
+}
+
+@media (max-width:769px) {
+    .mek {
+        background-position-x: 1150px;
+    }
+    .hm {
+        background-position-x: 1500px;
+    }
+    .twentyNine {
+        background-position-x: 1150px;
+    }
+    .goalPlan {
+        background-position-x: 1500px;
+    }
+    .acast {
+        background-position-x: 1150px;
+    }
+}
+
+
+
+
+/* 1.5 - FOOTER */
+
+footer {
+    padding: 6rem 0;
+}
+
+footer ul {
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 1em;
+}
+
+footer ul li {
+    display: inline-block;
+}
+
+footer ul li img {
+    width: 40px;
+    margin: 0 .5rem;
+}
+
+#credits {
+    font-size: .8rem;
+    margin-top: 2rem;
+}
+
+#credits li {
+    display: block;
+    text-align: center;
+    margin: .5em;
+}
+
+#emailIcon {
+    position: relative;
+}
+
+#emailHover {
+    position: absolute;
+    width: 500%;
+    top: -60px;
+    left: -120px;
+    display: none;
+}

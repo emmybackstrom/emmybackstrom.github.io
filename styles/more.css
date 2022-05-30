@@ -1,0 +1,76 @@
+/* MORE WORK */
+
+section {
+    padding: 2rem 3rem;
+}
+
+h1 {
+    font-size: 7rem;
+    letter-spacing: 1px;
+    font-family: 'ah_superduperbold', Times, serif;
+}
+
+section p {
+    max-width: 650px;
+    font-size: 1.5rem;
+    line-height:1.4;
+    margin: 1em 0;
+}
+
+
+
+
+/* GALLERY SECTION */
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding:0 3rem;
+    margin:auto;
+}
+
+main div {
+    width: 49.5%;
+}
+
+main div img {
+    width: 100%;
+    margin-bottom:.5rem;
+    display:block;
+}
+.embedVid {
+    margin-bottom:0;
+}
+
+@media (max-width:480px) {  
+    main {
+        flex-direction: column;
+    }
+    main div {
+        width:100%;
+    }
+}
+
+
+/* YOUTUBE EMBEDDING */
+#amphiYt,
+#newnormalsYt {
+    width:100%;
+    box-sizing: border-box;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#amphiYt iframe, 
+#newnormalsYt iframe {
+    width:92%;
+    margin-bottom:1.5rem;
+}
+
+#amphiYt {
+    background-color: #E8ECF8;
+}
+#newnormalsYt {
+    background-color: #F6F6F6;
+}

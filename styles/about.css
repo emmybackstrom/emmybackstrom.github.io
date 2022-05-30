@@ -1,0 +1,201 @@
+/* Introduction */
+#introduction {
+    box-sizing: border-box;
+    padding: 2rem 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+h1 {
+    font-size: 7rem;
+    letter-spacing: 1px;
+    font-family: 'ah_superduperbold', Times, serif;
+}
+
+p {
+    margin-top: 1em;
+    line-height: 22px;
+}
+
+#imEmmy {
+    width: 44%;
+}
+
+#portrait {
+    width: 50%;
+    height:454px;
+    overflow: hidden;
+}
+
+#portrait img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+@media (max-width:770px) {
+    #introduction {
+        flex-direction: column;
+        align-items: center;
+        width:80%;
+        margin: auto;
+    }
+
+    #imEmmy,
+    #portrait {
+        width: 100%;
+    }
+
+    #portrait {
+        margin-top: 1rem;
+        max-height: 375px;
+    }
+
+    #introduction p {
+        margin: 1em 0;
+    }
+}
+
+@media (max-width:480px) {
+    #introduction {
+        width:100%;
+    }
+}
+
+
+/* End of introduction */
+
+
+
+/* CV section */
+
+
+#cvOuter {
+    max-width: 1500px;
+    margin: auto;
+}
+
+
+#cvOuter h2 {
+    margin: 3rem;
+    text-align: center;
+}
+
+#cvInner h3 {
+    font-size: 3em;
+    margin: 0;
+}
+
+#cvInner h4 {
+    font-weight: 700;
+    font-family: 'satoshiblack';
+}
+
+#cvInner {
+    margin-top: 3rem;
+    line-height: 1.4;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.category {
+    /* width:30%; */
+}
+
+
+.categoryHeader {
+    display: flex;
+    align-items: center;
+}
+
+.headerRectangle {
+    height: 7px;
+    width: 100%;
+    margin-left: 1em;
+    background-color: black;
+}
+
+.cvSection {
+    display: flex;
+    margin: 1.5em 0;
+}
+
+.cvSection .dates {
+    display: flex;
+    justify-content: flex-end;
+    color: #cbcbcb;
+}
+
+.cvSection div {
+    margin-left: 1rem;
+    width: 250px;
+    border-bottom: 1.7px solid #C7C7C7;
+}
+
+.cvSection .last {
+    border-bottom: none;
+}
+
+#cvExperience ul,
+#cvEducation ul {
+    margin: 1em 0;
+}
+
+
+
+
+#cvExperience ul li,
+#cvEducation ul li,
+#cvSkills ul li {
+    position: relative;
+    padding-left: 1.25em;
+}
+
+#cvExperience li::before,
+#cvEducation li::before {
+    content: url('../images/bullet.png');
+    position: absolute;
+    left: 5px;
+    top: -3px;
+
+}
+
+
+#skillsListContainer {
+    width:300px;
+}
+
+
+#cvSkills .cvSection {
+    margin-top:0;
+}
+
+#cvSkills ul li {
+    padding:0;
+    margin-bottom:1em;
+    display:flex;
+    justify-content: space-between;
+}
+
+#cvSkills ul li img {
+    width:50%;
+}
+
+@media (max-width:850px) {
+    #cvInner {
+        flex-direction:column;
+        padding:0 3rem;
+    }
+}
+
+@media (max-width:480px) {
+    #cvSkills .dates {
+        display:none;
+    }
+    #skillsListContainer {
+        /* min-width:270px; */
+        margin-left:0;
+    }
+}
