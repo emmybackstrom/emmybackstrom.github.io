@@ -1,7 +1,7 @@
 /* Introduction */
 #introduction {
     box-sizing: border-box;
-    padding: 2rem 3rem;
+    padding: 6rem 3rem 2rem 6rem;
     display: flex;
     justify-content: space-between;
 }
