@@ -16,5 +16,3 @@ window.addEventListener('scroll', () => {
     lastScroll = currentScroll;
 })
 
-
-//  && !(currentScroll<lastScroll-50)

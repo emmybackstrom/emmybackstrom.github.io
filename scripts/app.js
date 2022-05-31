@@ -53,7 +53,7 @@ hoverSpanOne.addEventListener('mouseout', () => {
         anims.hoverSpanOne.setDirection(-1);
         anims.hoverSpanOne.goToAndPlay(8, true);
 
-        let fadeOutInterval = setInterval(hide, 20);            //
+        let fadeOutInterval = setInterval(hide, 20);            
         function hide() {
             let opacity = hiddenPContainer.style.opacity;
             if (opacity > 0) {
