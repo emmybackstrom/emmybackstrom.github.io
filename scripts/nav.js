@@ -20,11 +20,22 @@ window.addEventListener('scroll', () => {
 
 // Hamburger menu
 const hamburger = document.querySelector('#hamburgerIcon');
-const links = document.querySelectorAll('.collapsable')
+const ul = document.querySelector('header nav ul');
+const emmyrentia = document.querySelector('header span');
+
+
+let collapsed = true;
 
 
 hamburger.addEventListener('click', () => {
-for (let link of links) {
-    link.classList.toggle('hidden')
-}
+    if (collapsed === true) {
+        ul.style.height = '190px';
+        collapsed = false;
+        emmyrentia.style.opacity = 0;
+    } else {
+        ul.style.height = '32px';
+        collapsed = true;
+        emmyrentia.style.opacity = 1;
+    }
 })
+

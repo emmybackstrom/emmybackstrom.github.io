@@ -61,36 +61,48 @@ header nav ul li:hover {
 }
 
 #hamburgerIcon {
-    display:none;
+    display: none;
 }
 
 
 
 @media (max-width:480px) {
-    header nav ul {
-        display:flex;
-        flex-direction: column;
-        align-items: flex-end;
-        transition:3s;
-    }
-    header nav ul li {
-        margin-bottom: 1rem;
-    }
-    .hidden {
-        display:none;
-    }
-    #hamburgerIcon {
-        display:initial;
+    header {
+        padding: 2rem;
     }
     header span {
-        justify-self: center;
+        font-size: 2rem;
     }
+
+    header nav ul {
+        float: right;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        height: 32px;
+        font-size: 2rem;
+        overflow: hidden;
+        transition: .2s;
+        box-sizing: border-box;
+    }
+
+    header nav ul li {
+        margin-bottom: 1.2rem;
+    }
+
+    #hamburgerIcon {
+        display: initial;
+    }
+
+
+
+
 }
 
 
 /* 3. BANNER */
 #banner {
-    margin: 2rem 3rem;
+    padding: 2rem 3rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -173,18 +185,25 @@ svg {
         content: none;
     }
 }
+
 @media (max-width:769px) {
     #banner h1 {
-        font-size:2rem;
-        line-height:1.4;
-        max-width:90%;
+        font-size: 2rem;
+        line-height: 1.4;
+        max-width: 90%;
     }
 }
+
 @media (max-width:480px) {
-    #banner h1 {
-        font-size:1.5rem;
-        width:100%;
+    #banner {
+        padding: 2rem;
     }
+
+    #banner h1 {
+        font-size: 1.5rem;
+        width: 100%;
+    }
+
 }
 
 
@@ -214,7 +233,7 @@ main a {
 
 @media (max-width:480px) {
     main {
-        margin:0;
+        margin: 0;
     }
 }
 
@@ -326,65 +345,79 @@ main a {
         margin: 0 0 3rem 0;
         width: 100%;
         min-height: 290px;
-        background-size:auto 100%;
+        background-size: auto 100%;
     }
+
     .mek {
         background-image: url(../images/index/mekonomensmall.png);
     }
+
     .hm {
-        background-image: url(../images/index/hmsmall.png); 
+        background-image: url(../images/index/hmsmall.png);
     }
+
     .twentyNine {
         background-image: url(../images/index/29ksmall.png);
     }
+
     .goalPlan {
-        background-image: url(../images/index/goalplansmall.png);   
+        background-image: url(../images/index/goalplansmall.png);
     }
+
     .acast {
-        background-image: url(../images/index/acastsmall.png);   
+        background-image: url(../images/index/acastsmall.png);
     }
 }
 
 @media (min-width:1400px) {
     .project {
-        background-size:auto 250%;
+        background-size: auto 250%;
     }
+
     .mek {
-        background-image: url(../images/index/mekonomenwide.png);   
+        background-image: url(../images/index/mekonomenwide.png);
     }
+
     .hm {
-        background-image: url(../images/index/hmwide.png);   
+        background-image: url(../images/index/hmwide.png);
         background-size: auto 175%;
-        width:40%;
+        width: 40%;
     }
+
     .twentyNine {
-        background-image: url(../images/index/29kwide.png);   
+        background-image: url(../images/index/29kwide.png);
         background-position-y: -175px;
     }
+
     .goalPlan {
-        background-image: url(../images/index/goalplanwide.png);   
-        background-size:auto 175%;
-        width:40%;
+        background-image: url(../images/index/goalplanwide.png);
+        background-size: auto 175%;
+        width: 40%;
     }
+
     .acast {
-        background-image: url(../images/index/acastwide.png);   
+        background-image: url(../images/index/acastwide.png);
     }
-    
+
 }
 
 @media (max-width:769px) {
     .mek {
         background-position-x: 1150px;
     }
+
     .hm {
         background-position-x: 1500px;
     }
+
     .twentyNine {
         background-position-x: 1150px;
     }
+
     .goalPlan {
         background-position-x: 1500px;
     }
+
     .acast {
         background-position-x: 1150px;
     }
