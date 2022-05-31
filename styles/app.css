@@ -1,7 +1,5 @@
 /* 
 
-
-
 CONTENTS
 INDEX.HTML
 1.1 GLOBAL
@@ -62,7 +60,32 @@ header nav ul li:hover {
     transform: translate3d(0, -100%, 0);
 }
 
+#hamburgerIcon {
+    display:none;
+}
 
+
+
+@media (max-width:480px) {
+    header nav ul {
+        display:flex;
+        flex-direction: column;
+        align-items: flex-end;
+        transition:3s;
+    }
+    header nav ul li {
+        margin-bottom: 1rem;
+    }
+    .hidden {
+        display:none;
+    }
+    #hamburgerIcon {
+        display:initial;
+    }
+    header span {
+        justify-self: center;
+    }
+}
 
 
 /* 3. BANNER */
@@ -125,6 +148,7 @@ svg {
 }
 
 
+
 @media (max-width: 1088px) {
     #banner {
         flex-direction: column;
@@ -147,6 +171,19 @@ svg {
     #hoverSpanOne::after,
     #hoverSpanTwo::after {
         content: none;
+    }
+}
+@media (max-width:769px) {
+    #banner h1 {
+        font-size:2rem;
+        line-height:1.4;
+        max-width:90%;
+    }
+}
+@media (max-width:480px) {
+    #banner h1 {
+        font-size:1.5rem;
+        width:100%;
     }
 }
 

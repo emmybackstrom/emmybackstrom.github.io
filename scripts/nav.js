@@ -4,15 +4,27 @@ let lastScroll = 0;
 window.addEventListener('scroll', () => {
     const currentScroll = window.pageYOffset;
     if (currentScroll > 88) {
-        
+
     }
     if (currentScroll > lastScroll && !header.classList.contains('scrollDown') && currentScroll > 88) {
         header.classList.add('scrollDown');
     }
     if (currentScroll < lastScroll && header.classList.contains('scrollDown')) {
         header.classList.remove('scrollDown');
-        
+
     }
     lastScroll = currentScroll;
 })
 
+
+
+// Hamburger menu
+const hamburger = document.querySelector('#hamburgerIcon');
+const links = document.querySelectorAll('.collapsable')
+
+
+hamburger.addEventListener('click', () => {
+for (let link of links) {
+    link.classList.toggle('hidden')
+}
+})
